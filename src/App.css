@@ -1,10 +1,135 @@
 @import "tailwindcss";
 
+@theme {
+  --color-teal: #176552;
+  --color-light-teal: #47ad97;
+  --color-dark-teal: #23856d;
+  --color-darker-teal: #0d5c63;
+  --color-teal-blue: #16697a;
+
+  --color-green: #39603d;
+
+  --color-navy: #1d3557;
+  --color-dark-navy: #17213c;
+  --color-darker-navy: #14213d;
+
+  --color-blue: #457b9d;
+  --color-dark-blue: #004e7c;
+  --color-cyan: #00a1c1;
+
+  --color-red: #e63946;
+  --color-dark-red: #b73225;
+
+  --color-orange: #ff7b47;
+  --color-light-orange: #ffa62b;
+
+  --color-yellow: #fca311;
+
+  --color-dark-grey: #3c403d;
+  --color-dark-slate: #283747;
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .font-abril {
+    font-family: "Abril Fatface", serif;
+  }
+
+  .font-oswald {
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  }
+
+  h1 {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 57px;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  h6 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  ul,
+  ol {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  button {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  --color-cyan: #00a1c1;
 }
 
 .logo {
