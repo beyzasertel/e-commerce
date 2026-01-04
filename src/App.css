@@ -6,6 +6,7 @@
   --color-dark-teal: #23856d;
   --color-darker-teal: #0d5c63;
   --color-teal-blue: #16697a;
+  --color-blue-primary: #23a6f0;
 
   --color-green: #39603d;
 
@@ -27,6 +28,7 @@
 
   --color-yellow: #fca311;
 
+  --color-gray-medium: #737373;
   --color-dark-grey: #3c403d;
   --color-dark-slate: #283747;
 }
@@ -107,11 +109,16 @@
     margin-bottom: 0.5rem;
   }
 
-  a {
+  .link {
     font-size: 14px;
-    font-weight: 600;
-    line-height: 1.4;
-    text-decoration: none;
+    font-weight: 700;
+    line-height: 0.8;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+    font-weight: inherit !important;
   }
 
   a:hover {
@@ -122,6 +129,17 @@
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.02em;
+    background-color: inherit !important;
+    transition: inherit !important;
+  }
+
+  button:hover {
+    background-color: inherit !important;
+    border: inherit !important;
+  }
+
+  button:focus  {
+    outline: inherit !important;
   }
 }
 
