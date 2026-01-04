@@ -1,11 +1,16 @@
 import { useState } from "react";
 
 import "./App.css";
+import Navbar from "./components/navbar/navbar";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <h1 className="text-cyan">HEY</h1>;
+  return (
+    <>
+      <Navbar></Navbar>
+    </>
+  );
 }
 
 export default App;
