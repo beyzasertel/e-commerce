@@ -1,17 +1,16 @@
 import {
-  Facebook,
-  Instagram,
   Mail,
   Phone,
-  Twitch,
+  Facebook,
+  Instagram,
   Twitter,
   Youtube,
 } from "lucide-react";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <>
-      <div className="w-full bg-deep-navy p-2 text-white">
+      <div className="hidden md:block w-full bg-deep-navy p-2 text-white">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Phone />
@@ -34,5 +33,3 @@ function Navbar() {
     </>
   );
 }
-
-export default Navbar;

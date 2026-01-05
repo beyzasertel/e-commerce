@@ -8,6 +8,8 @@
   --color-teal-blue: #16697a;
   --color-blue-primary: #23a6f0;
 
+  --color-green-success: #2dc071;
+
   --color-green: #39603d;
 
   --color-navy: #1d3557;
@@ -125,21 +127,21 @@
     text-decoration: none;
   }
 
-  button {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    background-color: inherit !important;
-    transition: inherit !important;
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"] {
+    background-color: transparent;
+    border: none;
+    padding: 0;
   }
 
   button:hover {
-    background-color: inherit !important;
-    border: inherit !important;
+    background-color: transparent;
   }
 
-  button:focus  {
-    outline: inherit !important;
+  button:focus {
+    outline: none;
   }
 }
 
