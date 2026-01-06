@@ -10,7 +10,6 @@ import {
 import {
   ChevronDown,
   ChevronUp,
-  ClosedCaptionIcon,
   Heart,
   MenuIcon,
   Search,
