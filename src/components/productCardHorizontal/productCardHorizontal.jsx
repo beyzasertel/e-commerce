@@ -8,12 +8,10 @@ export default function ProductCardHorizontal({
 }) {
   return (
     <div className="w-full overflow-hidden bg-white">
-      {/* IMAGE */}
-      <div className="h-[520px] w-full overflow-hidden bg-light-gray ">
+      <div className="h-175 md:h-130 w-full overflow-hidden bg-light-gray ">
         <img src={image} alt={title} className="h-full w-full object-cover" />
       </div>
 
-      {/* CONTENT */}
       <div className="flex flex-col items-center gap-3 py-6">
         <h5 className="text-deep-navy font-bold">{title}</h5>
         <p className="text-gray-medium font-semibold">{subtitle}</p>
