@@ -8,12 +8,6 @@ export default function PostCard({
   image,
   size = "md",
 }) {
-  const sizes = {
-    lg: "h-[520px] md:h-[600px]",
-    sm: "h-[240px] md:h-[285px]",
-    md: "h-[360px] md:h-[420px]",
-  };
-
   const tags = ["Google", "Trending", "New"];
 
   return (
@@ -29,6 +23,7 @@ export default function PostCard({
           })}
         </div>
 
+        <h4 className="text-deep-navy">{title}</h4>
         <p className="text-gray-medium bold">{description}</p>
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center gap-2">
