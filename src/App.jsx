@@ -6,6 +6,7 @@ import ProductHomepageSection from "./sections/productHomepageSection/productHom
 import ProductBestsellersSection from "./sections/productsBestsellersSection/productBestsellersSection";
 import HeroSection from "./sections/heroSection/heroSection";
 import ProductCarousel from "./sections/productCarousel/productCarousel";
+import BuyNowSection from "./sections/buyNowSection/buyNowSection";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ProductHomepageSection />
       <ProductBestsellersSection />
       <ProductCarousel />
+      <BuyNowSection />
     </>
   );
 }

@@ -46,7 +46,7 @@ export default function Carousel({ slides = [] }) {
 
                   <div className="flex items-center justify-around mt-10 gap-4">
                     <h3 className="text-white">{slide.price}</h3>
-                    <button className="w-55 rounded-md bg-green-success! px-10 py-4 text-lg font-bold tracking-wide text-white shadow-sm transition hover:brightness-110 md:w-auto">
+                    <button className="w-55 rounded-md bg-green-success! px-10 py-4 text-lg font-bold text-white md:w-auto">
                       {slide.button}
                     </button>
                   </div>
