@@ -37,6 +37,7 @@
   --color-gray-medium: #737373;
   --color-dark-grey: #3c403d;
   --color-dark-slate: #283747;
+  --color-lightest-gray: #e6e6e6;
 }
 
 @layer utilities {

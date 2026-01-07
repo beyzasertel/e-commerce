@@ -9,6 +9,7 @@ import ProductCarousel from "./sections/productCarousel/productCarousel";
 import BuyNowSection from "./sections/buyNowSection/buyNowSection";
 import PostCard from "./components/postCard/postCard";
 import PostSection from "./sections/postSection/postSection";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ProductCarousel />
       <BuyNowSection />
       <PostSection />
+      <Footer />
     </>
   );
 }
