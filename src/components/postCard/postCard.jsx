@@ -6,7 +6,6 @@ export default function PostCard({
   date,
   viewCount,
   image,
-  size = "md",
 }) {
   const tags = ["Google", "Trending", "New"];
 
