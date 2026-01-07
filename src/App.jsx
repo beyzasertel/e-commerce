@@ -7,6 +7,8 @@ import ProductBestsellersSection from "./sections/productsBestsellersSection/pro
 import HeroSection from "./sections/heroSection/heroSection";
 import ProductCarousel from "./sections/productCarousel/productCarousel";
 import BuyNowSection from "./sections/buyNowSection/buyNowSection";
+import PostCard from "./components/postCard/postCard";
+import PostSection from "./sections/postSection/postSection";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <ProductBestsellersSection />
       <ProductCarousel />
       <BuyNowSection />
+      <PostSection />
     </>
   );
 }

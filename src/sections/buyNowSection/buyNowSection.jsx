@@ -2,7 +2,7 @@ import TitleComponent from "../../components/titleComponent/titleComponent";
 
 export default function BuyNowSection() {
   return (
-    <div className="flex items-center">
+    <div className="container mx-auto flex items-center">
       <img src="/assets/buyNow.png" alt="" />
       <div>
         <TitleComponent

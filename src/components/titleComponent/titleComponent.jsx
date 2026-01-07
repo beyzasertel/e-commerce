@@ -21,7 +21,7 @@ export default function TitleComponent({
         ${alignClass[align]}
       `}
     >
-      {subtitle && <h4 className={`${subtitleColor}`}>{subtitle}</h4>}
+      {subtitle && <p className={`${subtitleColor}`}>{subtitle}</p>}
 
       {title && <h3 className="text-deep-navy">{title}</h3>}
 
