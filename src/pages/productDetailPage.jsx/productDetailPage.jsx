@@ -8,6 +8,7 @@ import { Heart, ShoppingCart, Eye, ChevronRightIcon } from "lucide-react";
 import TabComponent from "../../components/tabComponent/tabComponent";
 import ProductBestsellersSection from "../../sections/productsBestsellersSection/productBestsellersSection";
 import ProductDetailSection from "../../sections/productDetailSection/productDetailSection";
+import LogoSection from "../../sections/logoSection/logoSection";
 
 export default function ProductDetailPage() {
   const { slug } = useParams();
@@ -18,7 +19,7 @@ export default function ProductDetailPage() {
   return (
     <>
       <section>
-        <div className=" container mx-auto flex items-center">
+        <div className=" container mx-auto flex items-center my-4">
           <Link to="/" className="text-deep-navy font-bold">
             Home
           </Link>
@@ -34,6 +35,7 @@ export default function ProductDetailPage() {
       <div className="bg-light-gray">
         <ProductBestsellersSection />
       </div>
+      <LogoSection />
     </>
   );
 }

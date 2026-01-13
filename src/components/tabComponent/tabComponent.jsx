@@ -2,12 +2,12 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 
 export default function TabComponent({ product }) {
   return (
-    <TabGroup className="mt-8">
-      <TabList className="flex gap-4 border-b items-center justify-center">
+    <TabGroup className="mt-8 p-2 md:p-0">
+      <TabList className="flex gap-4 border-b items-center justify-center border-gray">
         <Tab
           className={({ selected }) =>
             `px-4 py-2 text-sm font-medium ${
-              selected ? "font-bold" : "font-noormal"
+              selected ? "font-bold underline" : "font-normal"
             }`
           }
         >
@@ -17,7 +17,7 @@ export default function TabComponent({ product }) {
         <Tab
           className={({ selected }) =>
             `px-4 py-2 text-sm font-medium ${
-              selected ? "font-bold" : "font-noormal"
+              selected ? "font-bold underline" : "font-normal"
             }`
           }
         >
@@ -27,7 +27,7 @@ export default function TabComponent({ product }) {
         <Tab
           className={({ selected }) =>
             `px-4 py-2 text-sm font-medium ${
-              selected ? "font-bold" : "font-noormal"
+              selected ? "font-bold underline" : "font-normal"
             }`
           }
         >

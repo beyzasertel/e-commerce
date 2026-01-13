@@ -9,8 +9,8 @@ import ProductDetailCarousel from "../../components/productDetailCarousel/produc
 
 export default function ProductDetailSection({ product }) {
   return (
-    <section>
-      <div className="grid grid-cols-2 mt-4">
+    <section className="container mx-auto">
+      <div className="block md:grid grid-cols-2 mt-4 ">
         <ProductDetailCarousel product={product} />
         <div className="mx-4">
           <h4 className="text-deep-navy">{product.title}</h4>
@@ -76,7 +76,9 @@ export default function ProductDetailSection({ product }) {
         </div>
       </div>
 
-      <TabComponent product={product} />
+      <div className="container mx-auto">
+        <TabComponent product={product} />
+      </div>
     </section>
   );
 }
