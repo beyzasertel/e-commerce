@@ -1,7 +1,7 @@
 import { Eye, Heart, ShoppingCart } from "lucide-react";
 import ProductCard from "../../components/productCard/ProductCard";
 import ProductCardHorizontal from "../../components/productCardHorizontal/productCardHorizontal";
-import StarRating from "../../components/StarRatingComponent/StarRatingComponent";
+import StarRating from "../../components/starRatingComponent/starRatingComponent";
 import TitleComponent from "../../components/titleComponent/titleComponent";
 import ProductCarousel from "../productCarousel/productCarousel";
 import TabComponent from "../../components/tabComponent/tabComponent";

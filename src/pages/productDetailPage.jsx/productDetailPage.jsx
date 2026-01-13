@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { products } from "../../data/product"; // path'ini kendi yapına göre düzelt
 import ProductCarousel from "../../components/productDetailCarousel/productDetailCarousel";
-import StarRating from "../../components/StarRatingComponent/StarRatingComponent";
+import StarRating from "../../components/starRatingComponent/starRatingComponent";
 import { useState } from "react";
 
 import { Heart, ShoppingCart, Eye, ChevronRightIcon } from "lucide-react";
