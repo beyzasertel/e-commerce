@@ -38,6 +38,7 @@
   --color-dark-grey: #3c403d;
   --color-dark-slate: #283747;
   --color-lightest-gray: #e6e6e6;
+  --color-text-gray: #858585;
 }
 
 @layer utilities {
@@ -124,7 +125,7 @@
 
   a {
     text-decoration: none !important;
-    color: inherit !important;
+    color: inherit;
     font-weight: inherit !important;
   }
 

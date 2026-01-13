@@ -37,7 +37,7 @@ export default function FooterSubscribeForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-45 bg-[#23A6F0] text-white font-semibold text-lg transition hover:brightness-110 disabled:opacity-60"
+            className="w-45 bg-blue-primary text-white font-semibold text-lg transition hover:brightness-110 disabled:opacity-60"
           >
             {isSubmitting ? "..." : "Subscribe"}
           </button>

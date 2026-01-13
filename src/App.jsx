@@ -1,30 +1,24 @@
 import "./App.css";
 
-import Navbar from "./components/navbar/navbar";
-import Header from "./components/header/header";
-import ProductHomepageSection from "./sections/productHomepageSection/productHomepageSection";
-import ProductBestsellersSection from "./sections/productsBestsellersSection/productBestsellersSection";
-import HeroSection from "./sections/heroSection/heroSection";
-import ProductCarousel from "./sections/productCarousel/productCarousel";
-import BuyNowSection from "./sections/buyNowSection/buyNowSection";
-import PostCard from "./components/postCard/postCard";
-import PostSection from "./sections/postSection/postSection";
-import Footer from "./components/footer/footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import MainLayout from "./layout/mainLayout";
+import Homepage from "./pages/homePage/homePage";
+import ContactPage from "./pages/contact/contact";
+import ShoppingPage from "./pages/shoppingPage/shoppingPage";
+import ProductDetailPage from "./pages/productDetailPage.jsx/productDetailPage";
+
+export default function App() {
   return (
-    <>
-      <Navbar />
-      <Header />
-      <HeroSection />
-      <ProductHomepageSection />
-      <ProductBestsellersSection />
-      <ProductCarousel />
-      <BuyNowSection />
-      <PostSection />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/shop" element={<ShoppingPage />} />
+          <Route path="/shop/product/:slug" element={<ProductDetailPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
