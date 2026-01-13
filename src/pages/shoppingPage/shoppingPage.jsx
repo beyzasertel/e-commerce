@@ -5,6 +5,7 @@ import ProductCardHorizontal from "../../components/productCardHorizontal/produc
 import { useState } from "react";
 import { products } from "../../data/product";
 import { categories } from "../../data/categories";
+import BreadcrumbComponent from "../../components/breadcrumbComponent/breadcrumbComponent";
 
 export default function ShoppingPage() {
   const [viewMode, setViewMode] = useState("grid"); // "grid" | "list"
@@ -24,14 +25,12 @@ export default function ShoppingPage() {
         <div className="flex items-center justify-between">
           <h3 className="text-deep-navy">Shop</h3>
           <div className="flex items-center">
-            <Link to="/" className="text-deep-navy font-bold">
-              Home
-            </Link>
-            <ChevronRightIcon color="#BDBDBD" />
-
-            <Link to="/shop" className="text-gray">
-              Shop
-            </Link>
+            <BreadcrumbComponent
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Shop", href: "/shop" },
+              ]}
+            />
           </div>
         </div>
         <div className="flex md:flex-row gap-4 my-6">

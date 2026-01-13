@@ -9,6 +9,7 @@ import TabComponent from "../../components/tabComponent/tabComponent";
 import ProductBestsellersSection from "../../sections/productsBestsellersSection/productBestsellersSection";
 import ProductDetailSection from "../../sections/productDetailSection/productDetailSection";
 import LogoSection from "../../sections/logoSection/logoSection";
+import BreadcrumbComponent from "../../components/breadcrumbComponent/breadcrumbComponent";
 
 export default function ProductDetailPage() {
   const { slug } = useParams();
@@ -20,14 +21,12 @@ export default function ProductDetailPage() {
     <>
       <section>
         <div className=" container mx-auto flex items-center my-4">
-          <Link to="/" className="text-deep-navy font-bold">
-            Home
-          </Link>
-          <ChevronRightIcon color="#BDBDBD" />
-
-          <Link to="/shop" className="text-gray">
-            Shop
-          </Link>
+          <BreadcrumbComponent
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Shop", href: "/shop" },
+            ]}
+          />
         </div>
 
         <ProductDetailSection product={product} />
